@@ -19,7 +19,7 @@ const SiteNav = (props) => {
             <Navbar.Brand href="/">Restaurant</Navbar.Brand>
             <Nav className="mr-auto">
                 <Nav.Link href="/">Home</Nav.Link>
-
+                <Nav.Link href="/#">Restaurants</Nav.Link>
             </Nav>
 
 

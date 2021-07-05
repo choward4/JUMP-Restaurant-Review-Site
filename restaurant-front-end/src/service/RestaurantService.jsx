@@ -56,6 +56,10 @@ const baseurl = 'http://localhost:8090';
       return axios.post(`${baseurl}/api/restaurant/update`, restaurant);
   }
 
-  export function deleteUser(restaurantId) {
+  export function deleteRestaurant(restaurantId) {
       return axios.delete(`${baseurl}/api/restaurant/delete/` + restaurantId);
+  }
+
+  export function searchRestaurant(restaurantName) {
+      return axios.get(`${baseurl}/api/restaurant/` + restaurantName);
   }
