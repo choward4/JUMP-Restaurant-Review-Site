@@ -11,11 +11,9 @@ import RestaurantPage from "./components/RestaurantPage";
 
 function App() {
   return (
-    <div className="container-fluid">
       <Router>
         <SiteNav/>
         <Switch>
-          
           <Route path="/" exact component={() => <><Home /> </>} />
           <Route path="/results" exact component={() => <><Results /> </>} />
           <Route path="/restaurant-page" exact component={() => <><RestaurantPage /> </>} />
@@ -24,7 +22,6 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </div>
   );
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from "react-router-dom";
 import { useFetch } from '../service/RestaurantService';
 import RestaurantFormModal from '../modal/RestaurantFormModal';
-// import ReviewFormModal from '../modal/ReviewFormModal';
+import ReviewFormModal from '../modal/ReviewFormModals'
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);

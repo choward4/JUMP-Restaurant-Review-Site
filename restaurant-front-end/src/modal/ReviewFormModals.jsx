@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
-import ReviewForm from '../form/ReviewForm';
+import ReviewForm from '../forms/ReviewForm';
 import { createReview } from '../service/ReviewService';
 
 const ReviewFormModals = (props) => {
