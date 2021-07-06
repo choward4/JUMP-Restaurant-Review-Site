@@ -9,7 +9,7 @@ class ReviewForm extends Component {
             comment: props.review.comment,
             rating: props.review.rating
         }
-        this.handleChange = this.handleChange.bins(this);
+        this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleChange.bind(this);
         
     }
@@ -28,7 +28,7 @@ class ReviewForm extends Component {
         return (
             <div>
                 <div className="form-style">
-                    {this.state.id && <h3>{'Changes for ' + this.state.name}</h3>}
+                    {this.state.id && <h3>{'Changes for '}</h3>}
                     <form onSubmit={this.handleSubmit}>
                         <div className='row d-inline-flex'>
                             <div className="form-group col">

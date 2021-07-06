@@ -9,7 +9,7 @@ function ResultLayout(props) {
     var searchValue = null;
 
     if(props.search) {
-        searchMethod = 'search';
+        searchMethod = 'getByName';
         searchValue = props.search;
     }
 

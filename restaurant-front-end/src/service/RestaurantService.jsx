@@ -12,15 +12,12 @@ export const useFetch = (searchMethod, searchValue) => {
     const getAll = `${baseurl}/api/restaurants/`;
     const getById = `${baseurl}/api/restaurant/` + param;
     const getByName = `${baseurl}/api/restaurant/name/` + param;
-    const search = `${baseurl}/api/restaurant/search/` + param;
     let url = null;
   
     switch (searchMethod) {
       case 'getById': url = getById;
         break;
       case 'getAll': url = getAll;
-        break;
-      case 'search': url = search;
         break;
       case 'getByName' : url = getByName;
         break;

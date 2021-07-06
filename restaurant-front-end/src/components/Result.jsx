@@ -21,7 +21,7 @@ class Result extends Component {
 
     render() {
         
-        console.log(this.props.info);
+        // console.log(this.props.info);
         return (
             <div className="container row list" id={`restaurant` + this.props.info.restaruant_id}>
                 <Name name={this.props.info.name} />

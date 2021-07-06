@@ -28,7 +28,7 @@ function RestaurantPage(props) {
 
             <label>Description of Restaurant: </label>
             <p>{data.description}</p>
-            {/* {listItems} */}
+            {/* {listItems}  */}
             <div>
                 {data.average_rating}
 
@@ -40,10 +40,10 @@ function RestaurantPage(props) {
             <div>
                 <RestaurantFormModal type='update' restaurant={info}/>
             </div>
-            {/* <div>
+            <div>
                 <ReviewFormModal type='create'/>
             </div>
-             */}
+            
             
             
         </div>

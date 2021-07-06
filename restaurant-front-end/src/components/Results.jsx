@@ -8,6 +8,7 @@ function Results(props) {
             <h3>Results</h3>
             <br/>
             {!props.search && <ResultLayout search={false}/>}
+            {props.search && <ResultLayout search={props.search} searchFor={props.searchFor}/>}
 
         </div>
     );
