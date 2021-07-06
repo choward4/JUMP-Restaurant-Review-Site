@@ -9,6 +9,8 @@ class ReviewForm extends Component {
             comment: props.review.comment,
             rating: props.review.rating
         }
+        this.handleChange = this.handleChange.bins(this);
+        this.handleSubmit = this.handleChange.bind(this);
         
     }
     handleChange = (event) => {
@@ -35,19 +37,9 @@ class ReviewForm extends Component {
                             </div>
 
                             <div className="form-group col">
-                                <label >Address:</label>
-                                <input type="text" name="address" className="form-control" id="address" value={this.state.address} onChange={this.handleChange} required />
+                                <label >Rating:</label>
+                                <input type="text" name="number" className="form-control" id="rating" value={this.state.address} onChange={this.handleChange} required />
                             </div>
-                        </div>
-
-                        <div className="form-group">
-                            <label >Description:</label>
-                            <input type="text" name="description" className="form-control" id="description" value={this.state.description} onChange={this.handleChange} required />
-                        </div>
-
-                        <div className="form-group">
-                            <label >Average Rating:</label>
-                            <input type="number" name="rating" className="form-control" id="rating" value={this.state.average_rating} onChange={this.handleChange} required />
                         </div>
                         <input type="submit" value="Submit" className="btn btn-primary" />
                     </form>

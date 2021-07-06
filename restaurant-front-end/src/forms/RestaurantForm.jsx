@@ -5,7 +5,7 @@ class RestaurantForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            restaurantId: props.restaurant.restaurant_id,
+            restaruant_id: props.restaurant.restaruant_id,
             name: props.restaurant.name,
             address: props.restaurant.address,
             description: props.restaurant.description,
@@ -30,7 +30,7 @@ class RestaurantForm extends Component {
         return (
             <div>
                 <div className="form-style">
-                    {this.state.id && <h3>{'Changes for ' + this.state.name}</h3>}
+                    {this.state.restaruant_id && <h3>{'Changes for ' + this.state.name}</h3>}
                     <form onSubmit={this.handleSubmit}>
                         <div className='row d-inline-flex'>
                             <div className="form-group col">
@@ -47,11 +47,6 @@ class RestaurantForm extends Component {
                         <div className="form-group">
                             <label >Description:</label>
                             <input type="text" name="description" className="form-control" id="description" value={this.state.description} onChange={this.handleChange} required />
-                        </div>
-
-                        <div className="form-group">
-                            <label >Average Rating:</label>
-                            <input type="number" name="rating" className="form-control" id="rating" value={this.state.average_rating} onChange={this.handleChange} required />
                         </div>
                         <input type="submit" value="Submit" className="btn btn-primary" />
                     </form>
