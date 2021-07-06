@@ -10,7 +10,7 @@ function ResultLayout(props) {
 
     if(props.search) {
         searchMethod = 'getByName';
-        searchValue = props.searchFor;
+        searchValue = props.search;
     }
 
     const {loading, data } = useFetch(searchMethod, searchValue);
