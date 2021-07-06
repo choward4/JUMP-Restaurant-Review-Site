@@ -13,11 +13,12 @@ function App() {
   return (
     <div className="container-fluid">
       <Router>
+        <SiteNav/>
         <Switch>
           
-          <Route path="/" exact component={() => <><SiteNav/><Home /> </>} />
-          <Route path="/results" exact component={() => <><SiteNav/><Results /> </>} />
-          <Route path="/restaurant-page" exact component={() => <><SiteNav/><RestaurantPage /> </>} />
+          <Route path="/" exact component={() => <><Home /> </>} />
+          <Route path="/results" exact component={() => <><Results /> </>} />
+          <Route path="/restaurant-page" exact component={() => <><RestaurantPage /> </>} />
           <Route path="/login" exact component={() => <Login />} />
           <Route path="/signup" exact component={() => <SignUp />} />
         </Switch>
