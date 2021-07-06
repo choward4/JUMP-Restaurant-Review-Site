@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from "react-router-dom";
 import { useFetch } from '../service/RestaurantService';
 import RestaurantFormModal from '../modal/RestaurantFormModal';
-import ReviewFormModal from '../modal/ReviewFormModal';
+// import ReviewFormModal from '../modal/ReviewFormModal';
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);
@@ -40,10 +40,10 @@ function RestaurantPage(props) {
             <div>
                 <RestaurantFormModal type='update' restaurant={info}/>
             </div>
-            <div>
+            {/* <div>
                 <ReviewFormModal type='create'/>
             </div>
-            
+             */}
             
             
         </div>
