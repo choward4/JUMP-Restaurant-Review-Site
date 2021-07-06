@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from "react-router-dom";
+import './Home.css';
 
 function HomePage(props) {
 
@@ -7,8 +8,7 @@ function HomePage(props) {
         <div className="home">
             <h1>Welcome!</h1>
             <br/>
-            
-            <p1>This is the homepage</p1>
+            <img src='https://memegenerator.net/img/instances/65052209.jpg'/>
         </div>
     );
 }

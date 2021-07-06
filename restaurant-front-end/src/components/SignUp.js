@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import './LoginSignUp.css'
 
 function SignUpPage(props) {
 
     return (
         <div className="signup">
-            <h1> Signup Page </h1>
+            <h1> Sign-up Page </h1>
+            <br/>
+            <br/>
             <form>
                 <label>Email : </label>   
                 <input type="text" placeholder="Enter Email" name="email"/>  

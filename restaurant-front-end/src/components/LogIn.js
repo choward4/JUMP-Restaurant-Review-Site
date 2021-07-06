@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import './LoginSignUp.css'
 
 function LoginPage(props) {
 
     return (
         <div className="login">
             <h1> Login Page </h1>
+            <br/>
+            <br/>
             <form>
                 <label>Username : </label>   
                 <input type="text" placeholder="Enter Username" name="username"/>  
