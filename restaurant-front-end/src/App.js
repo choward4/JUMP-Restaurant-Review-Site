@@ -21,12 +21,10 @@ function App() {
 
 
   return (
-    <div className="container-fluid">
       <Router>
         <SiteNav search={searchFor}/>
         
         <Switch>
-          
           <Route path="/" exact component={() => <><Home /> </>} />
           <Route path="/results" exact component={() => <><Results /> </>} />
           {/* <Route psth="results">
@@ -41,7 +39,6 @@ function App() {
         {searching && <Results searh={search} searchFor={searchFor}/>} */}
         <Footer />
       </Router>
-    </div>
   );
 }
 

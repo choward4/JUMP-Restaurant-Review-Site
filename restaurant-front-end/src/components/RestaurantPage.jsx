@@ -2,8 +2,7 @@ import React from 'react';
 import { useLocation } from "react-router-dom";
 import { useFetch } from '../service/RestaurantService';
 import RestaurantFormModal from '../modal/RestaurantFormModal';
-import ReviewFormModal from '../modal/ReviewFormModal';
-
+import ReviewFormModal from '../modal/ReviewFormModals'
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);
@@ -16,12 +15,12 @@ function RestaurantPage(props) {
     const id = query.get("id");
     const info = useFetch('getById', id);
     const data = info.data;
-    console.log(data);
-    console.log(data.reviews);
-    // const listReviews = data.reviews;
-    // const listItems = listReviews.map((d) => <li key={d.comment}>{d.comment}</li>);
+    // const listItems = data.reviews.map((d) => <li key={d.comment}>{d.comment}</li>);
 
 
+    
+
+    console.log(info.data);
     return (
         
         <div>
@@ -29,10 +28,7 @@ function RestaurantPage(props) {
 
             <label>Description of Restaurant: </label>
             <p>{data.description}</p>
-            <div>
-                <label>Comments</label>
-                {/* {listItems} */}
-            </div>
+            {/* {listItems} */}
             <div>
                 {data.average_rating}
 
@@ -44,10 +40,10 @@ function RestaurantPage(props) {
             <div>
                 <RestaurantFormModal type='update' restaurant={info}/>
             </div>
-            <div>
+            {/* <div>
                 <ReviewFormModal type='create'/>
             </div>
-            
+             */}
             
             
         </div>

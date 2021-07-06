@@ -20,7 +20,7 @@ function SignUpPage(props) {
                 <input type="password" placeholder="Enter Password" name="password"/>  
                 <br/><br/>
                 
-                <button class="btn btn-primary" type="submit">Login</button>   
+                <button class="btn btn-primary" type="submit">SignUp</button>   
             </form>
 
             <br/>
