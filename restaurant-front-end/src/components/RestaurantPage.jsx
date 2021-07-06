@@ -7,7 +7,7 @@ function RestaurantPage(props) {
             <h1>Demo Name</h1>
 
             <label>Description of Restaurant: </label>
-            <textarea rows="4" cols="20">This is the best restaurant, it serves ramen, sushi, tacos, waffles, fried chicken, and more</textarea>
+            <textarea rows="10" cols="50">This is the best restaurant, it serves ramen, sushi, tacos, waffles, fried chicken, and more</textarea>
             
         </div>
     );

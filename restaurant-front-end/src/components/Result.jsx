@@ -1,19 +1,36 @@
 import React, { Component } from 'react';
 import './Result.css'
-function Result(props) {
+
+class Result extends Component {
+    render() {
+        return (
+            <div id="list" className="container row">
+                <Name name={this.props.info.name} />
+                <GoButton/>
+            </div>
+        );
+    }
+}
+
+function Name(props) {
 
     return (
-        <div id="list" clas="row">
-            <div col-md-6>
-                <p1>{props.name}</p1>
-            </div>
-            <div class="col-md-12 text-right">
-                <a href="/restaurant-page">
-                    <button type="button" class="btn btn-light">Go To Page</button>
-                </a>
-            </div>
+        <div className="col-md-6">
+            <p1>{props.name}</p1>
         </div>
     );
+}
+
+function GoButton() {
+    return(
+        <div className="col-md-12 text-right col-centered">
+            <a href="/restaurant-page" className="col-centered">
+                <button type="button" className="btn btn-light">Go To Page</button>
+            </a>
+        </div>
+
+    )
+    
 }
 
 export default Result;

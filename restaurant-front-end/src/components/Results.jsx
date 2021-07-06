@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import Result from "./Result"
+import ResultLayout from "./ResultLayout"
 
 function Results(props) {
 
     return (
-        <div className="results">
+        <div className="container-fluid">
             <h3>Results</h3>
             <br/>
+            {!props.search && <ResultLayout search={false}/>}
 
-            <Result name={"Demo Name"}/>
-            <Result name={"Demo Name 2"}/>
         </div>
     );
     
